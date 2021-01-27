@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/banner2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: 0.5s ease;
+}
+.nav-bar.sticky{
+    background: crimson;
+    background-position: center;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    padding-top: 5px;
+    padding-right: 60px;
+}
+ul li{
+    padding-top: 30px;
+    padding-right: 50px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: 0.3s ease;
+}
+ul li a:hover{
+    color: red;
+}
+.nav-bar.sticky ul li a:hover{
+    color: white;
+}
+.main .nav-bar .logo h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    font-weight: bolder;
+    color: white;
+    padding-top: 20px;
+    padding-left: 150px;
+}
+.myself{
+    position: absolute;
+    top: 36%;
+    left: 7%;
+}
+.myself h1{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+}
+.myself h2{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+}
+.myself h2 span{
+    color: crimson;
+}
+
+/*About section*/
+.About{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+}
+.About .About-title{
+    padding-left: 500PX;
+    padding-top: 100PX;
+    padding-bottom: 30px;
+}
+.About .About-title h1{
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40PX;
+    text-decoration: underline;  
+}
+.About .About-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightgray;
+    height: 70vh;
+    margin-right: 150px;
+    margin-right: 150px;
+    border-radius: 6px;
+   
+}
+.About .About-content .left{
+    width: 50%;
+}
+.About .About-content .left img{
+    padding-left: 100px;
+    padding-top: 65px;
+}
+.About .About-content .right{
+    width: 50%;
+    padding-top: 80px;
+    padding-right: 30px;
+}
+.About .About-content .right .text{
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 5%;
+}
+.About .About-content .right .text span{
+    color: red;
+}
+.About .About-content .right p{
+    font-size: 20px;
+    font-weight: 550;
+}
+
+/* skills section styling */
+.Skills{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.Skills .Skills-title{
+    padding-left: 650PX;
+    padding-top: 100PX;
+    padding-bottom: 50px;
+}
+.Skills .Skills-title h1{
+    color: white;
+    font-size: 40PX;
+    text-decoration: underline; 
+}
+.Skills .Skills-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    background-color: #222;
+    background-position: 25%;
+    height: 55vh;
+    border-radius: 6px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.Skills .Skills-content .column{
+    position: absolute;
+    padding-left: 15%;
+    width: calc(50% - 30px);
+}
+.Skills .Skills-content .right .prolang{
+    color: white;
+    font-size: 20px;
+    padding-left: 200px;
+    text-decoration: underline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.Skills .Skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.Skills .Skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.Skills .Skills-content .right span{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+.Skills .Skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.Skills .Skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.Skills-content .right .webdevelopment::before{
+    width: 70%;
+}
+.Skills-content .right .appdevelopment::before{
+    width: 40%;
+}
+.Skills-content .right .modeling::before{
+    width: 60%;
+}
+.Skills-content .right .gamedevelopment::before{
+    width: 50%;
+}
+.Skills-content .right .html::before{
+    width: 60%;
+}
+.Skills-content .right .css::before{
+    width: 60%;
+}
+.Skills-content .right .js::before{
+    width: 40%;
+}
+
+.contact{
+    height: 70vh;
+}
+.contact .contact-title{
+    padding-left: 650PX;
+    padding-top: 100PX;
+    padding-bottom: 50px;
+}
+.contact .contact-title h1{
+    color: black;
+    font-size: 40PX;
+    text-decoration: underline; 
+}
+.contact .contact-content .left{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.contact .contact-content .left .text{
+    font-size: 30px;
+    font-weight: bold;
+}
+.contact .contact-content .left .icons{
+    padding-top: 20px;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
